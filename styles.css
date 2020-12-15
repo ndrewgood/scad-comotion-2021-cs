@@ -1,3 +1,5 @@
+html, body {margin: 0; overflow: hidden}
+
 body {
     margin: 0;
     display: flex;
@@ -8,12 +10,109 @@ body {
 
 .container {
     margin: auto;
+    margin-top: auto;
     text-align: center;
     color: #FFF5E4;
     font-family: Arial, Helvetica, sans-serif;
+    transition: .6s;
+}
+
+@media only screen and (min-width: 1500px) {
+    .logo {
+        margin-top: -100px;
+    }
 }
 
 .logo {
-    max-width: 600px;
+    max-width: 500px;
     width: 75vw;
+    transition: .6s;
+}
+
+.theater-bottom {
+    background-image: url("./assets/theater-bottom.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -2;
+}
+
+.blob1 {
+    position: absolute;
+    width: 160px;
+    transform: translate(0, 0px);
+    top: 6vh;
+    left: 45%;
+	animation: float1 5s ease-in-out infinite;
+}
+
+@keyframes float1 {
+	0% {
+		transform: translate(0, 0px);;
+	}
+	50% {
+		transform: translate(0, -20px);;
+	}
+	100% {
+		transform: translate(0, 0px);;
+	}
+}
+
+.blob2 {
+    position: absolute;
+    width: 200px;
+    transform: translate(0, 0px);
+    left: 20px;
+    animation: float1 5s ease-in-out infinite;
+    animation-delay: -2s;
+}
+
+.blob3 {
+    position: absolute;
+    width: 200px;
+    transform: translate(0, 0px);
+    right: 20px;
+    animation: float1 5s ease-in-out infinite;
+    animation-delay: -1s;
+}
+
+@media only screen and (max-width: 800px) {
+    .blob1, .blob2, .blob3, .theater-bottom {
+        display: none;
+    }
+    .container {
+        margin-top: 20vh;
+    }
+    .shrine {
+        display: block !important;
+    }
+}
+
+.shrine {
+    display: none;
+    background-image: url("./assets/comotion-shrine.png");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: fixed;
+    height: 60%;
+    bottom: 0;
+    width: 100vw;
+    z-index: -2;
+}
+
+img, .theater-bottom {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;   
 }
