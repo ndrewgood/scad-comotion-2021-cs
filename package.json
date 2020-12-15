@@ -1,0 +1,19 @@
+{
+  "name": "scad-comotion-2021-cs",
+  "version": "1.0.0",
+  "description": "Coming Soon site from SCAD CoMotion 2021",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndrewgood/scad-comotion-2021-cs.git"
+  },
+  "author": "Andrew Goodridge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ndrewgood/scad-comotion-2021-cs/issues"
+  },
+  "homepage": "https://github.com/ndrewgood/scad-comotion-2021-cs#readme"
+}

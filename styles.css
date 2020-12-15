@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background: rgb(243,99,82);
+    background: linear-gradient(197deg, rgb(238, 89, 72) 0%, rgba(244,123,105,1) 100%);
+}
+
+.container {
+    margin: auto;
+    text-align: center;
+    color: #FFF5E4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    max-width: 600px;
+    width: 75vw;
+}
