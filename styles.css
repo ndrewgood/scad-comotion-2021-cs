@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 html, body {margin: 0; overflow: hidden}
 
 body {
@@ -13,8 +15,13 @@ body {
     margin-top: auto;
     text-align: center;
     color: #FFF5E4;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     transition: .6s;
+}
+
+p {
+    margin-block-start: 0.2em;
+    margin-block-end: 1em;
 }
 
 @media only screen and (min-width: 1500px) {
