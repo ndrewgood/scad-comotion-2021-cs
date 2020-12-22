@@ -8,6 +8,8 @@ body {
     height: 100vh;
     background: rgb(243,99,82);
     background: linear-gradient(197deg, rgb(238, 89, 72) 0%, rgba(244,123,105,1) 100%);
+    overflow-x: hidden;
+    overflow-y: hidden;
 
 }
 
@@ -111,7 +113,7 @@ p {
         position: unset;
     }
     p {
-        top: 36vh;
+        top: 34vh;
     }
     video {
         width: 130vw;
