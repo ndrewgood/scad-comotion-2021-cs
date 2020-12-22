@@ -6,14 +6,14 @@ body {
     margin: 0;
     display: flex;
     height: 100vh;
-    /* background: rgb(243,99,82); */
-    /* background: linear-gradient(197deg, rgb(238, 89, 72) 0%, rgba(244,123,105,1) 100%); */
-    background: #e27969;
+    background: rgb(243,99,82);
+    background: linear-gradient(197deg, rgb(238, 89, 72) 0%, rgba(244,123,105,1) 100%);
+
 }
 
 .container {
-    margin: auto;
-    margin-top: 150px;
+    /* margin: auto; */
+    /* margin-top: -100px; */
     text-align: center;
     color: #FFF5E4;
     font-family: 'Poppins', sans-serif;
@@ -25,11 +25,19 @@ p {
     position: absolute;
     transform: translate(-50%);
     left: 50%;
-    bottom: 40px;
+    top: 60%;
     z-index: 20;
     margin-block-start: 0.2em;
     margin-block-end: 1em;
+    font-size: 18px;
 }
+@media only screen and (max-width: 1100px) {
+    p {
+        top: 56%;
+        font-size: 15px;
+    }
+}
+
 
 @media only screen and (min-width: 1500px) {
     .logo {
@@ -41,6 +49,12 @@ p {
     max-width: 500px;
     width: 75vw;
     transition: .6s;
+}
+
+#lottie {
+    height: 100%;
+    width: 100%;
+    margin-top: -50px
 }
 
 .theater-bottom {
@@ -97,7 +111,7 @@ p {
         position: unset;
     }
     p {
-        top: 50vw;
+        top: 36vh;
     }
     video {
         width: 130vw;
@@ -105,9 +119,6 @@ p {
         transform: translate(-50%);
         left: 50%;
         top: 40px;
-    }
-    body {
-        background: #df6d5b;
     }
 }
 
@@ -117,8 +128,18 @@ p {
         display: none;
     }
     .container {
-        margin-top: 13vh;
+        width: 100vw;
+        margin-top: -13vh;
     }
+    #lottie {
+        height: 100%;
+        width: 150%;
+        position: absolute;
+        transform: translate(-50%);
+        left: 50%;
+        margin-top: -100px;
+    }
+    
     .shrine {
         display: block !important;
     }
